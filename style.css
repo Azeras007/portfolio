@@ -274,11 +274,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   white-space: nowrap;
 }
 .project .tags { margin-top: 0.2rem; }
+.project-kicker { color: var(--accent); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.02em; }
+.project-featured p:not(.project-kicker) { max-width: 44em; }
 
 /* Experience */
 .timeline { display: grid; gap: 1.5rem; }
 .timeline li { display: grid; gap: 0.35rem; }
-.timeline .when { color: var(--accent); font-weight: 600; font-size: 0.92rem; white-space: nowrap; }
+.timeline .when { color: var(--accent); font-weight: 600; font-size: 0.92rem; }
 .timeline h3 { font-size: 1.15rem; }
 .timeline .job { color: var(--muted); margin-top: 0.15rem; }
 .timeline ul { margin-top: 0.6rem; display: grid; gap: 0.35rem; padding-left: 1rem; list-style: disc; }
@@ -340,7 +342,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .offer { grid-template-columns: 1fr 200px; gap: 2rem; }
   .offer-price { text-align: right; }
   .projects { grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
-  .timeline li { grid-template-columns: 140px 1fr; gap: 1.25rem; }
+  .project-featured { grid-column: 1 / -1; }
+  .timeline li { grid-template-columns: 150px 1fr; gap: 1.25rem; }
   .skills { grid-template-columns: 1fr 1fr; gap: 1.75rem 2rem; }
 }
 
